@@ -1,28 +1,21 @@
-# Eye Exercise - Phase 1 Scaffold
+# Eye Exercise
 
-This phase includes:
-- React frontend with webcam boundary guidance prompts.
-- FastAPI backend with websocket iris detection pipeline.
-- Backend iris preview rendered in frontend.
+React + TypeScript + Vite app for webcam-based eye exercise tracking and guidance.
 
-## Project structure
-- `frontend/` React + Vite app
-- `backend/` FastAPI service
+## Project Structure
+- `src/` application code
+- `dist/` production build output
 
-## Run backend
+## Run Locally
 ```bash
-cd backend
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
-
-## Run frontend
-```bash
-cd frontend
 npm install
 npm run dev
 ```
 
-Open frontend from Vite URL (usually `http://localhost:5173`).
+Open the app from the Vite URL (usually `http://localhost:5173`).
+
+## Quality Checks
+```bash
+npm run lint
+npm run build
+```
