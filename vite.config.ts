@@ -4,6 +4,8 @@ import basicSsl from '@vitejs/plugin-basic-ssl'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Relative asset paths keep the build portable for GitHub Pages project sites.
+  base: './',
   plugins: [react(), basicSsl()],
   server: {
     host: '0.0.0.0',
